@@ -1,0 +1,13 @@
+namespace "GeoIndex"."db";
+
+entity team {
+    key team_ID      : Integer generated always as identity
+    				(start with 100 increment by 1);
+		team         : String(20);
+		streetnumber : Integer;
+		streetname   : String(20);
+		locality     : String(20);
+		state        : String(2);
+		zipcode      : String(5);
+		country      : String(2);
+};
